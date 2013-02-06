@@ -159,7 +159,7 @@ class Chef
     end
 
     def destroy(data_bag=data_bag, databag_item=name)
-      chef_server_rest.delete_rest("data/#{data_bag}/#{databag_item}")
+      chef_server_rest.delete_rest("data/#{data_bag}/#{id}")
     end
 
     # Save this Data Bag Item via RESTful API
